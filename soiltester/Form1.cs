@@ -63,6 +63,8 @@ namespace soiltester
 
         public void newClientDisplay(ref clientDisplay[] clientDisplay, int i, int id, string name, string num, string snm, string addr)
         {
+            //displaying clients 
+            
             ClientPanel.Controls.Add(clientDisplay[i]);
             clientDisplay[i].BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             clientDisplay[i].Dock = System.Windows.Forms.DockStyle.Top;
@@ -77,6 +79,8 @@ namespace soiltester
 
         public void newProDisplay(ref projectDisplay[] proDisplay, int i,int pId, string pname, string cnames,string desc)
         {
+            //display projects done
+            
             proPanel.Controls.Add(proDisplay[i]);
             proDisplay[i].BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             proDisplay[i].Dock = System.Windows.Forms.DockStyle.Top;
