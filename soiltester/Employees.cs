@@ -28,6 +28,9 @@ namespace soiltester
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
+
+           //registering a new employee or lab technician
+           
             if (tbName.Text.Trim() != "" && tbSname.Text.Trim() != "" && tbUserame.Text.Trim() != "" && tbType.Text.Trim() != "" && tbAddress.Text.Trim() != "")
             {
                 if (conn.State == ConnectionState.Closed) conn.Open();
@@ -66,6 +69,8 @@ namespace soiltester
 
                 if (dataBox.Rows[0].Cells[0].Value == null)
                 {
+
+                   //adding data to database
                     if (tbPass.Text.ToLower().Trim() == tbRepass.Text.ToLower().Trim())
                     {
 
